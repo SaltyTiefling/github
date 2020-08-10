@@ -12,7 +12,7 @@ namespace Chinese_vrijwilliger_kiezer
         static void Main(string[] args)
         {
             Random rnjezus = new Random();
-            string[] klasslijst = {"Jonas","Martijn","Koen","Kris","Yannick","Antal","Benjamin","Dario","Latha","Machiel","Manal",
+            string[] klasslijst = {"Jonas","Jonas","Martijn","Koen","Kris","Yannick","Antal","Benjamin","Dario","Latha","Machiel","Manal",
                 "Niels","Scott","Sergio","Sujithra","Vic","Yura"};
                 string input;
             do
