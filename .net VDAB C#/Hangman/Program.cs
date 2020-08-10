@@ -12,44 +12,48 @@ namespace Hangman
         static string word;
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
-            Dictionary<string, bool> guesses = new Dictionary<string, bool>();
+            //Console.OutputEncoding = System.Text.Encoding.Unicode;
+            //Dictionary<string, bool> guesses = new Dictionary<string, bool>();
 
-            Console.WriteLine("welcome to hangman: Please fill in your word/sentence");
-            string word = Console.ReadLine().ToUpper();
+            //Console.WriteLine("welcome to hangman: Please fill in your word/sentence");
+            //string word = Console.ReadLine().ToUpper();
 
-            Console.Clear();
-            bool victory = false;
+            //Console.Clear();
+            //bool victory = false;
 
-            int misses = 0;
-            while (!victory && misses < 8)
+            //int misses = 0;
+            //while (!victory && misses < 8)
+            //{
+            //    Console.Write("Take your guess: ");
+            //    string guess = Console.ReadLine();
+            //    Console.WriteLine();
+            //    if (guess == word)
+            //    {
+            //        victory = true;
+            //    }
+
+            //    misses++;
+            //    if (word.Contains(guess) && guess.Length <= 1)
+            //    {
+            //        misses--;
+
+
+            //    }
+            //    //print word
+
+            //    printHangman(misses);
+            //    Console.Write("guesses:");
+            //    foreach (var character in guessedChars)
+            //    {
+            //        Console.Write(" " + character);
+            //    }
+            //    Console.WriteLine();
+            //}
+            for (int i = 0; i <= 8; i++)
             {
-                Console.Write("Take your guess: ");
-                string guess = Console.ReadLine();
-                Console.WriteLine();
-                if (guess == word)
-                {
-                    victory = true;
-                }
-
-                misses++;
-                if (word.Contains(guess) && guess.Length <= 1)
-                {
-                    misses--;
-
-
-                }
-                //print word
-
-                printHangman(misses);
-                Console.Write("guesses:");
-                foreach (var character in guessedChars)
-                {
-                    Console.Write(" " + character);
-                }
-                Console.WriteLine();
+                printHangman(i);
+                Console.ReadLine();
             }
-
         }
         static public void printHangman(int misses)
         {
